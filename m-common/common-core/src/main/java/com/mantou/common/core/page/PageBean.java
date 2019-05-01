@@ -1,13 +1,12 @@
 package com.mantou.common.core.page;
 
 import lombok.Data;
-import lombok.Getter;
 
 import java.io.Serializable;
 
 /**
  * 分页请求对象
- * (注: 该分页对象不作默认分页处理, pageNum pageSize值为null, 值不合理; 统一处理成null)
+ * (注: 该分页对象不作默认分页处理, pageNum pageSize值不合理; 统一处理成null)
  * @author mantou
  */
 @Data
@@ -37,7 +36,7 @@ public class PageBean implements Serializable {
 
 
     /**
-     * 自定义页面页容量 - 构造方法
+     * 自定义页码, 页容量 - 构造方法
      * @param pageNum
      * @param pageSize
      */
@@ -49,7 +48,7 @@ public class PageBean implements Serializable {
                 this.pageNum = pageNum;
                 this.pageSize = pageSize;
 
-                // Mysql Limit 查询索引, 查询条数计数
+                //计算 Mysql Limit 查询索引, 查询条数计数
                 this.limitOffset = (pageNum - 1) * pageSize;
                 this.limitRows = pageSize;
             }
