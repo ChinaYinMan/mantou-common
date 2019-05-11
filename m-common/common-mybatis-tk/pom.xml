@@ -5,11 +5,47 @@
     <parent>
         <artifactId>m-common</artifactId>
         <groupId>com.mantou.common</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>0.0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>common-mybatis-tk</artifactId>
+    <version>${com.mantou.common.version}</version>
+    <packaging>jar</packaging>
+    <name>${project.artifactId}</name>
+    <description>Mybatis tk</description>
+
+    <properties>
+        <mybatis.spring.boot.starter>1.1.1</mybatis.spring.boot.starter>
+        <pagehelper.version>1.1.0</pagehelper.version>
+        <tk.mybatis.version>1.1.0</tk.mybatis.version>
+    </properties>
+
+    <dependencies>
+        <!-- Mybatis依赖 -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${mybatis.spring.boot.starter}</version>
+        </dependency>
+        <!-- Mybatis CRUD -->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-spring-boot-starter</artifactId>
+            <version>${tk.mybatis.version}</version>
+        </dependency>
+        <!-- Mybatis分页插件  -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>${pagehelper.version}</version>
+        </dependency>
+        <!-- p6spy格式化Sql -->
+        <dependency>
+            <groupId>p6spy</groupId>
+            <artifactId>p6spy</artifactId>
+        </dependency>
+    </dependencies>
 
 
 </project>

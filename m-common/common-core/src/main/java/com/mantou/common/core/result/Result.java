@@ -1,3 +1,4 @@
+
 package com.mantou.common.core.result;
 
 
@@ -8,6 +9,7 @@ import java.io.Serializable;
 
 /**
  * 项目统一响应结果类
+ *
  * @author mantou
  */
 public class Result<T> implements Serializable {
@@ -31,6 +33,7 @@ public class Result<T> implements Serializable {
     /**------------------------------------------------------操作类方法-----------------------------------------------------**/
     /**
      * 操作成功 - 构造方法
+     *
      * @return
      */
     public static <T> Result<T> success() {
@@ -39,6 +42,7 @@ public class Result<T> implements Serializable {
 
     /**
      * 操作成功 - 构造方法
+     *
      * @param data
      * @return
      */
@@ -48,6 +52,7 @@ public class Result<T> implements Serializable {
 
     /**
      * 操作失败 - 构造方法
+     *
      * @return
      */
     public static <T> Result<T> failed() {
@@ -56,6 +61,7 @@ public class Result<T> implements Serializable {
 
     /**
      * 操作失败 - 构造方法 自定义返回基础信息
+     *
      * @return
      */
     public static <T> Result<T> failed(String retInfo) {
@@ -74,6 +80,7 @@ public class Result<T> implements Serializable {
     /**----------------------------------------------------服务/业务类方法----------------------------------------------------**/
     /**
      * 服务异常 - 构造方法
+     *
      * @return
      */
     public static <T> Result<T> serverException() {
@@ -82,6 +89,7 @@ public class Result<T> implements Serializable {
 
     /**
      * 服务异常 - 构造方法 自定义返回基础信息
+     *
      * @return
      */
     public static <T> Result<T> serverException(String retInfo) {
@@ -90,6 +98,7 @@ public class Result<T> implements Serializable {
 
     /**
      * 业务异常 - 构造方法
+     *
      * @return
      */
     public static <T> Result<T> businessException() {
@@ -98,6 +107,7 @@ public class Result<T> implements Serializable {
 
     /**
      * 业务异常 - 构造方法 自定义返回基础信息
+     *
      * @param retInfo
      * @return
      */
@@ -107,6 +117,7 @@ public class Result<T> implements Serializable {
 
     /**
      * 参数无意义 - 构造方法
+     *
      * @return
      */
     public static <T> Result<T> paramsEmpty() {
@@ -118,6 +129,7 @@ public class Result<T> implements Serializable {
     /**-----------------------------------------------------自定义类方法------------------------------------------------------**/
     /**
      * 自定义返回码, 返回基础信息 - 构造方法
+     *
      * @param retCode
      * @param retInfo
      */
@@ -128,6 +140,7 @@ public class Result<T> implements Serializable {
 
     /**
      * 自定义返回码, 返回基础信息, 返回数据 - 构造方法
+     *
      * @param retCode
      * @param retInfo
      * @param data
@@ -140,6 +153,7 @@ public class Result<T> implements Serializable {
 
     /**
      * 自定义返回码, 返回基础信息 - Set方法
+     *
      * @param retCode
      * @param retInfo
      */
