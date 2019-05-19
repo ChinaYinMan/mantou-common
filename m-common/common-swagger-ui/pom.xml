@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>common-swagger-ui</artifactId>
-    <version>${com.mantou.common.version}</version>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
     <description>基础Swagger Bootstrap UI</description>
