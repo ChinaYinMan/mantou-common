@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>m-common</artifactId>
-        <groupId>com.mantou.common</groupId>
+        <groupId>com.github.chinayinman</groupId>
         <version>0.0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -17,7 +17,7 @@
 
     <properties>
         <!-- Mybatis-Spring版本 -->
-        <!-- 与Mybatis Plus中Mybatis版本保持一致, 避免版本冲突 -->
+        <!-- 与Mybatis Plus中Mybatis版本保持一致 -->
         <mybatis-spring.version>2.0.0</mybatis-spring.version>
     </properties>
 
