@@ -19,12 +19,12 @@
         <!-- SpringCloud Feign -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <artifactId>spring-cloud-openfeign-core</artifactId>
         </dependency>
-        <!-- SpringCloud -->
+        <!-- SpringCloud Commons-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter</artifactId>
+            <artifactId>spring-cloud-commons</artifactId>
         </dependency>
         <!-- Mybatis-Spring -->
         <dependency>

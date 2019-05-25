@@ -16,10 +16,10 @@
     <description>Spring Boot Annotation [SpringBoot 相关注解]</description>
 
     <dependencies>
-        <!-- SpringBoot Starter -->
+        <!-- SpringBoot Autoconfigure -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
         <!-- Mybatis-Spring -->
         <dependency>
