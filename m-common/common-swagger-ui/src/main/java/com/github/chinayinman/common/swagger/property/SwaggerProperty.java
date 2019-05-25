@@ -11,11 +11,11 @@ import java.util.List;
 /**
  * SwaggerProperty
  *
- * @mantou
+ * @author mantou
  **/
 @Data
 @Component
-@ConfigurationProperties("mantou-swagger")
+@ConfigurationProperties("swagger")
 public class SwaggerProperty {
 
     /**

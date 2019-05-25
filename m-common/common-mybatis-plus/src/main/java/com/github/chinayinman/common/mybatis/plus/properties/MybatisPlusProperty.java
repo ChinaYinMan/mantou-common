@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  */
 @Data
 @Component
-@ConfigurationProperties(prefix = "mantou-mybatis-plus")
+@ConfigurationProperties(prefix = "mybatis-plus")
 public class MybatisPlusProperty {
 
 
