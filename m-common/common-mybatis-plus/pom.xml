@@ -5,24 +5,33 @@
     <parent>
         <artifactId>m-common</artifactId>
         <groupId>com.github.chinayinman</groupId>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>common-mybatis-plus</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
     <description>Mybatis Plus</description>
 
-    <!-- 子项目常量 -->
     <properties>
-        <!-- Mybatis Plus版本 -->
+        <!-- Mybatis Plus -->
         <mybatis-plus-boot-starter.version>3.1.0</mybatis-plus-boot-starter.version>
     </properties>
 
     <dependencies>
-        <!-- MyBatis-Plus依赖 -->
+        <!--MySQL-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!--Alibaba Druid-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+        </dependency>
+        <!-- MyBatis-Plus -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>

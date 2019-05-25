@@ -5,15 +5,15 @@
     <parent>
         <artifactId>m-common</artifactId>
         <groupId>com.github.chinayinman</groupId>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>common-swagger-ui</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <description>基础Swagger Bootstrap UI</description>
+    <description>Swagger Bootstrap UI</description>
 
 
 </project>

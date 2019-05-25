@@ -5,39 +5,39 @@
     <parent>
         <artifactId>m-common</artifactId>
         <groupId>com.github.chinayinman</groupId>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>common-annotation</artifactId>
-    <version>0.0.1</version>
-    <packaging>jar</packaging>
+    <version>0.0.2</version>
+    <packaging>pom</packaging>
     <name>${project.artifactId}</name>
-    <description>馒头注解</description>
+    <description>Man Tou Annotation Set [馒头注解集]</description>
+
+    <modules>
+        <module>base-annotation</module>
+        <module>boot-annotation</module>
+        <module>cloud-annotation</module>
+    </modules>
+
+
 
     <properties>
-        <!-- Mybatis-Spring版本 -->
-        <!-- 与Mybatis Plus中Mybatis版本保持一致 -->
+        <!-- Mybatis-Spring -->
+        <!-- Mybatis Plus Mybatis -->
         <mybatis-spring.version>2.0.0</mybatis-spring.version>
     </properties>
 
-    <dependencies>
-        <!-- SpringCloud Feign依赖 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-        <!-- Mybatis-Spring依赖 -->
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis-spring</artifactId>
-            <version>${mybatis-spring.version}</version>
-        </dependency>
-        <!-- SpringCloud依赖 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter</artifactId>
-        </dependency>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <!-- Mybatis-Spring -->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-spring</artifactId>
+                <version>${mybatis-spring.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

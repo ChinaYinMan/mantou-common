@@ -5,28 +5,31 @@
     <parent>
         <artifactId>m-common</artifactId>
         <groupId>com.github.chinayinman</groupId>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>common-mybatis-tk</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <description>Mybatis tk</description>
+    <description>Mybatis tk + Pagehelper [Mybatis CRUD + 分页]</description>
 
     <properties>
-        <mybatis.spring.boot.starter>1.1.1</mybatis.spring.boot.starter>
-        <pagehelper.version>1.1.0</pagehelper.version>
-        <tk.mybatis.version>1.1.0</tk.mybatis.version>
+        <pagehelper.version>1.2.10</pagehelper.version>
+        <tk.mybatis.version>2.1.5</tk.mybatis.version>
     </properties>
 
     <dependencies>
-        <!-- Mybatis依赖 -->
+        <!--MySQL-->
         <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>${mybatis.spring.boot.starter}</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!--Alibaba Druid-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
         </dependency>
         <!-- Mybatis CRUD -->
         <dependency>
@@ -34,13 +37,13 @@
             <artifactId>mapper-spring-boot-starter</artifactId>
             <version>${tk.mybatis.version}</version>
         </dependency>
-        <!-- Mybatis分页插件  -->
+        <!-- Mybatis Pagehelper  -->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>${pagehelper.version}</version>
         </dependency>
-        <!-- p6spy格式化Sql -->
+        <!-- p6spy Format Sql -->
         <dependency>
             <groupId>p6spy</groupId>
             <artifactId>p6spy</artifactId>

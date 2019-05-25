@@ -1,17 +1,15 @@
-package com.github.chinayinman.common.annotation.cloud.application;
+package com.github.chinayinman.cloud.annotation.application;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.client.SpringCloudApplication;
-import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.context.annotation.*;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.annotation.AliasFor;
 
 import java.lang.annotation.*;
 
 /**
- * SpringCloudApplication组合注解
- * (住: 适用于SpringCloud框架)
+ * SpringCloudPlusApplication 组合注解
  * @author mantou
  */
 @Target({ElementType.TYPE})
@@ -22,24 +20,9 @@ import java.lang.annotation.*;
 @EnableAutoConfiguration
 @ComponentScan
 @MapperScan
-@EnableFeignClients
 public @interface SpringCloudPlusApplication {
 
-    /**---------------------------@EnableFeignClients注解-------------------------------**/
-    @AliasFor(
-            annotation = EnableFeignClients.class,
-            attribute = "basePackages"
-    )
-    String[] feignClientBasePackages() default {};
-
-    @AliasFor(
-            annotation = EnableFeignClients.class,
-            attribute = "basePackageClasses"
-    )
-    Class<?>[] feignClientBasePackageClasses() default {};
-    /**---------------------------@EnableFeignClients注解-------------------------------**/
-
-    /**------------------------------@MapperScan注解-----------------------------------**/
+    /**------------------------------@MapperScan-----------------------------------**/
     @AliasFor(
             annotation = MapperScan.class,
             attribute = "basePackages"
@@ -51,9 +34,9 @@ public @interface SpringCloudPlusApplication {
             attribute = "basePackageClasses"
     )
     Class<?>[] mapperScanBasePackageClasses() default {};
-    /**------------------------------@MapperScan注解-----------------------------------**/
+    /**------------------------------@MapperScan-----------------------------------**/
 
-    /**-----------------------@EnableAutoConfiguration注解----------------------------**/
+    /**-----------------------@EnableAutoConfiguration----------------------------**/
     @AliasFor(
             annotation = EnableAutoConfiguration.class
     )
@@ -64,9 +47,9 @@ public @interface SpringCloudPlusApplication {
     )
     String[] excludeName() default {};
 
-    /**-----------------------@EnableAutoConfiguration注解----------------------------**/
+    /**-----------------------@EnableAutoConfiguration----------------------------**/
 
-    /**---------------------------@ComponentScan注解----------------------------------**/
+    /**---------------------------@ComponentScan----------------------------------**/
     @AliasFor(
             annotation = ComponentScan.class,
             attribute = "basePackages"
@@ -78,6 +61,6 @@ public @interface SpringCloudPlusApplication {
             attribute = "basePackageClasses"
     )
     Class<?>[] scanBasePackageClasses() default {};
-    /**---------------------------@ComponentScan注解----------------------------------**/
+    /**---------------------------@ComponentScan----------------------------------**/
 
 }

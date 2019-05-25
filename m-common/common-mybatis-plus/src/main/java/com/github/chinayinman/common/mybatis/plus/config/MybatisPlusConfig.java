@@ -4,7 +4,7 @@ package com.github.chinayinman.common.mybatis.plus.config;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.PerformanceInterceptor;
-import com.github.chinayinman.common.mybatis.plus.mybatisplus.MybatisPlusProperties;
+import com.github.chinayinman.common.mybatis.plus.properties.MybatisPlusProperty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -16,15 +16,15 @@ import org.springframework.context.annotation.Profile;
  * @author mantou
  */
 @Configuration
-@EnableConfigurationProperties(MybatisPlusProperties.class)
+@EnableConfigurationProperties(MybatisPlusProperty.class)
 public class MybatisPlusConfig {
 
 
     @Autowired
-    private MybatisPlusProperties.PerformanceInterceptor performanceInterceptor;
+    private MybatisPlusProperty.PerformanceInterceptor performanceInterceptor;
 
     @Autowired
-    private MybatisPlusProperties.PaginationInterceptor paginationInterceptor;
+    private MybatisPlusProperty.PaginationInterceptor paginationInterceptor;
 
 
     /**

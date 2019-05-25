@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 /**
  * 分页请求对象
- * (注: 该分页对象不作默认分页处理, pageNum pageSize值不合理; 统一处理成null)
+ * (该分页对象不作默认分页处理, pageNum pageSize值不合理; 统一处理成null])
  * @author mantou
  */
 @Data

@@ -8,12 +8,14 @@
 
     <groupId>com.github.chinayinman</groupId>
     <artifactId>m-common</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>m-common</name>
-    <description>馒头的公共组件库, 用于Java开发</description>
+    <description>
+        Mantou's common component library for Java development[馒头的公共组件库, 用于Java开发]
+    </description>
     <url>https://github.com/ChinaYinMan/mantou-common</url>
 
-    <!-- 子项目 -->
+    <!-- Project Modules [子项目] -->
     <modules>
         <module>common-core</module>
         <module>common-mybatis-plus</module>
@@ -23,25 +25,26 @@
         <module>common-annotation</module>
     </modules>
 
-    <!-- 全局常量 -->
+    <!-- Global Properties -->
     <properties>
         <lombok.version>1.18.6</lombok.version>
         <spring-boot.version>2.1.3.RELEASE</spring-boot.version>
-        <com.github.chinayinman.version>0.0.1</com.github.chinayinman.version>
-        <!-- p6spy格式化Sql依赖 -->
+        <com.github.chinayinman.version>0.0.2</com.github.chinayinman.version>
+        <!-- p6spy Format Sql -->
         <p6spy.version>3.8.0</p6spy.version>
-        <!-- SpringCloud版本 -->
+        <!-- SpringCloud -->
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
-        <!-- Maven插件版本 -->
+        <!-- Maven -->
         <maven.plugin.version>3.8.0</maven.plugin.version>
-        <!-- Java版本 -->
+        <!-- Java -->
         <java.version>1.8</java.version>
-        <compile.version>7</compile.version>
+        <!-- Druid -->
+        <druid.version>1.1.10</druid.version>
     </properties>
 
-    <!-- 基础依赖 -->
+    <!-- Base Dependencies [基础依赖] -->
     <dependencies>
-        <!-- Lombok依赖 -->
+        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -75,10 +78,16 @@
         <url>https://github.com/ChinaYinMan/mantou-common</url>
     </scm>
 
-    <!-- 全局依赖管理 -->
+    <!-- Global Management [全局管理] -->
     <dependencyManagement>
         <dependencies>
-            <!-- p6spy格式化Sql -->
+            <!--Alibaba Druid-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!-- p6spy Format Sql [格式化Sql] -->
             <dependency>
                 <groupId>p6spy</groupId>
                 <artifactId>p6spy</artifactId>
@@ -114,8 +123,8 @@
                         <artifactId>maven-compiler-plugin</artifactId>
                         <version>3.8.0</version>
                         <configuration>
-                            <source>${compile.version}</source>
-                            <target>${compile.version}</target>
+                            <source>${java.version}</source>
+                            <target>${java.version}</target>
                             <encoding>UTF-8</encoding>
                         </configuration>
                     </plugin>

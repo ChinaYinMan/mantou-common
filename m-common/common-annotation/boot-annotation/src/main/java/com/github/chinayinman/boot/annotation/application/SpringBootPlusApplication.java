@@ -1,17 +1,13 @@
-package com.github.chinayinman.common.annotation.cloud.application;
+package com.github.chinayinman.boot.annotation.application;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-
-
 import org.springframework.core.annotation.AliasFor;
 
 import java.lang.annotation.*;
 
 /**
- * SpringBootApplication组合注解
- * (注: 用于SpringBoot框架)
+ * SpringBootPlusApplication 组合注解
  * @author mantou
  */
 @Target({ElementType.TYPE})
@@ -45,7 +41,7 @@ public @interface SpringBootPlusApplication {
     Class<?>[] scanBasePackageClasses() default {};
 
 
-    /**------------------------------@MapperScan注解-----------------------------------**/
+    /**------------------------------@MapperScan-----------------------------------**/
     @AliasFor(
             annotation = MapperScan.class,
             attribute = "basePackages"
@@ -57,7 +53,7 @@ public @interface SpringBootPlusApplication {
             attribute = "basePackageClasses"
     )
     Class<?>[] mapperScanBasePackageClasses() default {};
-    /**------------------------------@MapperScan注解-----------------------------------**/
+    /**------------------------------@MapperScan-----------------------------------**/
 
 
 

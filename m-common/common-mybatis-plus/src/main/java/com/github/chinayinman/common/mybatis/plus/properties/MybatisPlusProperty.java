@@ -1,4 +1,4 @@
-package com.github.chinayinman.common.mybatis.plus.mybatisplus;
+package com.github.chinayinman.common.mybatis.plus.properties;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -6,24 +6,24 @@ import org.springframework.stereotype.Component;
 
 
 /**
- * Mybatis-plus 配置类
+ * Mybatis-plus Property
  * @author mantou
  */
 @Data
 @Component
-@ConfigurationProperties(prefix = "manout-mybatis-plus")
-public class MybatisPlusProperties {
+@ConfigurationProperties(prefix = "mantou-mybatis-plus")
+public class MybatisPlusProperty {
 
 
     /**
-     * SQL执行效率插件
+     * Sql执行效率插件
      */
     @Data
     @Component
     public class PerformanceInterceptor {
 
         /**
-         * Sql最大执行时长: 默认1秒
+         * 最大执行时长: 默认1秒
          */
         public long maxTime = 1000;
 
@@ -43,9 +43,9 @@ public class MybatisPlusProperties {
     public class PaginationInterceptor {
 
         /**
-         * 方言类型
+         * 方言类型: 默认 mysql
          */
-        private String dialectType;
+        private String dialectType = "mysql";
 
     }
 
