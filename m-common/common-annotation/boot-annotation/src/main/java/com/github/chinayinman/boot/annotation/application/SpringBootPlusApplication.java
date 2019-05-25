@@ -8,6 +8,7 @@ import java.lang.annotation.*;
 
 /**
  * SpringBootPlusApplication 组合注解
+ *
  * @author mantou
  */
 @Target({ElementType.TYPE})
@@ -41,7 +42,9 @@ public @interface SpringBootPlusApplication {
     Class<?>[] scanBasePackageClasses() default {};
 
 
-    /**------------------------------@MapperScan-----------------------------------**/
+    /**
+     * ------------------------------@MapperScan-----------------------------------
+     **/
     @AliasFor(
             annotation = MapperScan.class,
             attribute = "basePackages"
@@ -54,7 +57,6 @@ public @interface SpringBootPlusApplication {
     )
     Class<?>[] mapperScanBasePackageClasses() default {};
     /**------------------------------@MapperScan-----------------------------------**/
-
 
 
 }

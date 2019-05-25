@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Profile;
 
 /**
  * 配置类
+ *
  * @author mantou
  */
 @Configuration
@@ -32,7 +33,7 @@ public class MybatisPlusConfig {
      * 设置 dev test 环境开启
      */
     @Bean
-    @Profile({"dev","test"})
+    @Profile({"dev", "test"})
     public PerformanceInterceptor performanceInterceptor() {
 
         //SQL 执行性能分析，开发环境使用，线上不推荐

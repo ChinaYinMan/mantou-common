@@ -5,8 +5,9 @@ import tk.mybatis.mapper.common.MySqlMapper;
 
 /**
  * BaseMapper
- * @author mantou
+ *
  * @param <T>
+ * @author mantou
  */
 public interface BaseMapper<T> extends Mapper<T>, MySqlMapper<T> {
     //TODO

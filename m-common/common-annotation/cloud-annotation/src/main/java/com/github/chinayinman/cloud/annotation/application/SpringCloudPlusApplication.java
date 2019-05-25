@@ -10,6 +10,7 @@ import java.lang.annotation.*;
 
 /**
  * SpringCloudPlusApplication 组合注解
+ *
  * @author mantou
  */
 @Target({ElementType.TYPE})
@@ -22,7 +23,9 @@ import java.lang.annotation.*;
 @MapperScan
 public @interface SpringCloudPlusApplication {
 
-    /**------------------------------@MapperScan-----------------------------------**/
+    /**
+     * ------------------------------@MapperScan-----------------------------------
+     **/
     @AliasFor(
             annotation = MapperScan.class,
             attribute = "basePackages"
@@ -36,7 +39,9 @@ public @interface SpringCloudPlusApplication {
     Class<?>[] mapperScanBasePackageClasses() default {};
     /**------------------------------@MapperScan-----------------------------------**/
 
-    /**-----------------------@EnableAutoConfiguration----------------------------**/
+    /**
+     * -----------------------@EnableAutoConfiguration----------------------------
+     **/
     @AliasFor(
             annotation = EnableAutoConfiguration.class
     )
@@ -49,7 +54,9 @@ public @interface SpringCloudPlusApplication {
 
     /**-----------------------@EnableAutoConfiguration----------------------------**/
 
-    /**---------------------------@ComponentScan----------------------------------**/
+    /**
+     * ---------------------------@ComponentScan----------------------------------
+     **/
     @AliasFor(
             annotation = ComponentScan.class,
             attribute = "basePackages"

@@ -7,6 +7,7 @@ import java.io.Serializable;
 /**
  * 分页请求对象
  * (该分页对象不作默认分页处理, pageNum pageSize值不合理; 统一处理成null])
+ *
  * @author mantou
  */
 @Data
@@ -37,6 +38,7 @@ public class PageBean implements Serializable {
 
     /**
      * 自定义页码, 页容量 - 构造方法
+     *
      * @param pageNum
      * @param pageSize
      */
@@ -44,7 +46,7 @@ public class PageBean implements Serializable {
 
         if (pageNum != null && pageSize != null) {
 
-            if (pageNum > 0 && pageSize >0 ) {
+            if (pageNum > 0 && pageSize > 0) {
                 this.pageNum = pageNum;
                 this.pageSize = pageSize;
 
@@ -64,6 +66,7 @@ public class PageBean implements Serializable {
 
     /**
      * 私有Set方法, limitOffset只能通过PageBean构造方法计算而出
+     *
      * @param limitOffset
      */
     private void setLimitOffset(Integer limitOffset) {
@@ -72,6 +75,7 @@ public class PageBean implements Serializable {
 
     /**
      * 私有Set方法, limitRows只能通过PageBean构造方法计算而出
+     *
      * @param limitRows
      */
     private void setLimitRows(Integer limitRows) {
@@ -80,6 +84,7 @@ public class PageBean implements Serializable {
 
     /**
      * pageNum排除无意义的值, 例如: 0, 负数
+     *
      * @param pageNum
      */
     public void setPageNum(Integer pageNum) {
@@ -88,6 +93,7 @@ public class PageBean implements Serializable {
 
     /**
      * pageSize排除无意义的值, 例如: 0, 负数
+     *
      * @param pageSize
      */
     public void setPageSize(Integer pageSize) {

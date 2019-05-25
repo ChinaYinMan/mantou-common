@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * Mybatis-plus Property
+ *
  * @author mantou
  */
 @Data

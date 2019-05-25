@@ -4,6 +4,7 @@ import java.lang.annotation.*;
 
 /**
  * AOP切入点注解
+ *
  * @author mantou
  */
 @Retention(RetentionPolicy.RUNTIME)
@@ -14,6 +15,7 @@ public @interface Pointcut {
 
     /**
      * 说明
+     *
      * @return
      */
     String message() default "";
