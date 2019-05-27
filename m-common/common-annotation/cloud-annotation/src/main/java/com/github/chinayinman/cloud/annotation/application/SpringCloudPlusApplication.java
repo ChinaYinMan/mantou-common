@@ -1,6 +1,5 @@
 package com.github.chinayinman.cloud.annotation.application;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.context.annotation.ComponentScan;
@@ -19,25 +18,7 @@ import java.lang.annotation.*;
 @Inherited
 @SpringCloudApplication
 @EnableAutoConfiguration
-@ComponentScan
-@MapperScan
 public @interface SpringCloudPlusApplication {
-
-    /**
-     * ------------------------------@MapperScan-----------------------------------
-     **/
-    @AliasFor(
-            annotation = MapperScan.class,
-            attribute = "basePackages"
-    )
-    String[] mapperScanBasePackages() default {};
-
-    @AliasFor(
-            annotation = MapperScan.class,
-            attribute = "basePackageClasses"
-    )
-    Class<?>[] mapperScanBasePackageClasses() default {};
-    /**------------------------------@MapperScan-----------------------------------**/
 
     /**
      * -----------------------@EnableAutoConfiguration----------------------------

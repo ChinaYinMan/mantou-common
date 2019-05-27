@@ -15,18 +15,4 @@
     <name>${project.artifactId}</name>
     <description>Spring Boot Annotation [SpringBoot 相关注解]</description>
 
-    <dependencies>
-        <!-- SpringBoot Autoconfigure -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
-        <!-- Mybatis-Spring -->
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis-spring</artifactId>
-        </dependency>
-
-    </dependencies>
-
 </project>

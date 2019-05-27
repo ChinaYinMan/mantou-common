@@ -22,21 +22,4 @@
     </modules>
 
 
-    <properties>
-        <!-- Mybatis-Spring -->
-        <!-- Mybatis Plus Mybatis -->
-        <mybatis-spring.version>2.0.0</mybatis-spring.version>
-    </properties>
-
-    <dependencyManagement>
-        <dependencies>
-            <!-- Mybatis-Spring -->
-            <dependency>
-                <groupId>org.mybatis</groupId>
-                <artifactId>mybatis-spring</artifactId>
-                <version>${mybatis-spring.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
 </project>
