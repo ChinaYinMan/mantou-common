@@ -13,7 +13,15 @@
     <version>0.0.2</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <description>Mantou Tools [馒头 工具类]</description>
+    <description>Mantou's components of the tools library. [馒头组件库的工具组件]</description>
 
+    <dependencies>
+        <!-- 基础组件 -->
+        <dependency>
+            <groupId>com.github.chinayinman</groupId>
+            <artifactId>common-base</artifactId>
+            <version>0.0.2</version>
+        </dependency>
+    </dependencies>
 
 </project>

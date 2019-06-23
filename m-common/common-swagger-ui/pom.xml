@@ -13,7 +13,7 @@
     <version>0.0.2</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <description>Swagger Bootstrap UI</description>
+    <description>Mantou's Swagger-UI components of a component library. [馒头组件库的Swagger-UI组件.]</description>
 
     <properties>
         <springfox-swagger2.version>2.9.2</springfox-swagger2.version>

@@ -13,7 +13,15 @@
     <version>0.0.2</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <description>Mantou's Project Core Component [馒头的项目核心组件]</description>
+    <description>Mantou's core components of the component library [组件库的核心组件]</description>
 
+    <dependencies>
+        <!-- 基础组件 -->
+        <dependency>
+            <groupId>com.github.chinayinman</groupId>
+            <artifactId>common-base</artifactId>
+            <version>0.0.2</version>
+        </dependency>
+    </dependencies>
 
 </project>

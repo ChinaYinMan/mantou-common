@@ -1,4 +1,4 @@
-package com.github.chinayinman.common.core.constants;
+package com.github.chinayinman.common.base.constant;
 
 /**
  * 异常定义-常量
@@ -49,6 +49,14 @@ public class ExceptionConstant {
     public static final String RET_CODE_PARAM_EMPTY = "00002";
     public static final String RET_INFO_PARAM_EMPTY = "Parameters Is Empty ( 参数无意义 ) !";
     /**-----------------------------------------------------请求/参数类----------------------------------------------------*/
+
+    /**---------------------------------------------------------其他类----------------------------------------------------*/
+    /**
+     * 自定义JSON转换异常码
+     */
+    public static final String RET_CODE_JSON_EXCEPTION = "10001";
+    public static final String RET_INFO_JSON_EXCEPTION = "Custom JSON exception ( 自定义JSON异常 )";
+    /**---------------------------------------------------------其他类----------------------------------------------------*/
 
 
 }

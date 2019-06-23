@@ -9,11 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>common</artifactId>
+    <artifactId>common-base</artifactId>
     <version>0.0.2</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <description>Mantou's Public components of a component library [馒头组件库的公共组件]</description>
+    <description>Mantou's base component of the component library . [馒头组件库的基础组件.]</description>
+
 
 
 </project>

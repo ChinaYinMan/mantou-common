@@ -1,6 +1,7 @@
 package com.github.chinayinman.common.tools.exception;
 
-import com.mantou.boot.constants.ExceptionConstant;
+
+import com.github.chinayinman.common.base.constant.ExceptionConstant;
 
 /**
  * @description  自定义JSON异常

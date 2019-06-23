@@ -13,7 +13,7 @@
     <version>0.0.2</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <description>Mybatis Plus</description>
+    <description>Mantou's Component library's Mybatis-Plus components. [馒头组件库的Mybatis-Plus组件.]</description>
 
     <properties>
         <!-- Mybatis Plus -->

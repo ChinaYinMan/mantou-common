@@ -13,7 +13,7 @@
     <version>0.0.2</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <description>Mybatis tk + Pagehelper [Mybatis CRUD + 分页]</description>
+    <description>Mantou's Component library's Mybatis-tk components [馒头组件库的Mybatis-tk组件]</description>
 
     <properties>
         <pagehelper.version>1.2.10</pagehelper.version>

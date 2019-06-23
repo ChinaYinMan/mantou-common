@@ -2,7 +2,8 @@
 package com.github.chinayinman.common.core.result;
 
 
-import com.github.chinayinman.common.core.constants.ExceptionConstant;
+
+import com.github.chinayinman.common.base.constant.ExceptionConstant;
 
 import java.io.Serializable;
 
@@ -72,7 +73,7 @@ public class Result<T> implements Serializable {
      * 操作是否成功 - 构造方法
      */
     public static <T> Result<T> isSuccess(boolean isSuccess, String errorMessage, T data) {
-        return isSuccess ? Result.<T>failed(errorMessage) : Result.<T>success(data);
+        return isSuccess ? Result.<T>success(data) : Result.<T>failed(errorMessage);
     }
     /**------------------------------------------------------操作类方法-----------------------------------------------------**/
 

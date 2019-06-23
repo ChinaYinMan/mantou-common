@@ -23,7 +23,8 @@
         <module>common-tools</module>
         <module>common-swagger-ui</module>
         <module>common-annotation</module>
-        <module>common</module>
+        <module>common-base</module>
+        <module>common-base</module>
     </modules>
 
     <!-- Global Properties -->
